@@ -134,9 +134,9 @@
             </p>
 
             <div>
-                <tableau-viz id="tableauYeungYuet"       
-                    src='https://public.tableau.com/views/Task1_17319395106370/Dashboard2?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
-                  </tableau-viz> <!--Task1-->
+                <tableau-viz id="tableau"
+                    src='https://public.tableau.com/views/Task1_17323403448630/1-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'>
+                </tableau-viz> <!--Task1-->
             </div>
 
             <div class="more-info">
@@ -158,7 +158,7 @@
                     <h3>Energy Consumption and Environment</h3>
                     <p>The indexed line graph shows a <span class="highlight">positive correlation</span> between total energy consumption and Air quality.</p>
                     <div>
-                        <tableau-viz id="tableauYeungYuet"       
+                        <tableau-viz id="tableau"       
                             src='https://public.tableau.com/views/COMP4462ProjectTask3Energy/Sheet2?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task3 EC vs air quality-->
                           </tableau-viz>
                     </div>
@@ -167,7 +167,7 @@
                     <h3>Energy Consumption and Finance</h3>
                     <p>Parallel coordinates demonstrate the correlation between GDP, unemployment rate, CPI, and energy consumption. These indicators are <span class="highlight">positively correlated</span>, suggesting economic growth might drive higher energy use.</p>
                     <div>
-                        <tableau-viz id="tableauYeungYuet"       
+                        <tableau-viz id="tableau"       
                             src='https://public.tableau.com/views/Task4EC/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task4 EC vs finance-->
                           </tableau-viz>
                     </div>
@@ -176,7 +176,7 @@
                     <h3>Energy Consumption and Living Quality</h3>
                     <p>Correlation analysis reveals a <span class="highlight">positive link</span> between HDI and energy consumption, indicating that more developed countries tend to consume more energy.</p>
                     <div>
-                        <tableau-viz id="tableauYeungYuet"       
+                        <tableau-viz id="tableau"       
                             src='https://public.tableau.com/views/Task5EC/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task5 EC vs living quality-->
                           </tableau-viz>
                     </div>
@@ -190,44 +190,47 @@
                     <h3>Happiness and Environment</h3>
                     <p>?????</p>
                     <div>
-                        <tableau-viz id="tableauYeungYuet"       
-                            src='https://public.tableau.com/views/COMP4462ProjectTask3Happiness/Sheet3?:language=zh-CN&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task3 Happiness vs air quality-->
+                        <tableau-viz id="tableau"       
+                            src='https://public.tableau.com/views/Task3_17323403212080/3-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task3 Happiness vs air quality-->
                           </tableau-viz>
                     </div>
                 </div>
                 <div class="card">
-                    <h3>Happiness and Finance</h3>
+                    <h3>Happiness, Finance and Living Quality </h3>
                     <p>?????</p>
                     <div>
-                        <tableau-viz id="tableauYeungYuet"       
-                            src='https://public.tableau.com/views/Task4Happiness/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task4 Happiness vs finance-->
+                        <tableau-viz id="tableau"       
+                            src='https://public.tableau.com/views/Task45_17323402993720/45-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task4 Happiness vs finance--> <!--Task5 Happiness vs living quality-->
                           </tableau-viz>
                     </div>
                 </div>
-                <div class="card">
+                <!--<div class="card">
                     <h3>Happiness and Living Quality</h3>
                     <p>?????</p>
-                    <div>
-                        <tableau-viz id="tableauYeungYuet"       
-                            src='https://public.tableau.com/views/Task5Happiness/Sheet1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task5 Happiness vs living quality-->
-                          </tableau-viz>
+                </div>-->
+                <!--<div class="conclusion">
+                    <div class="nodelink">
+                        <iframe = ></iframe>
                     </div>
-                </div>
-                <div class="conclusion">
                     <div class="conclusion-text">
                         <p>From the above Visualizations, we can find out “Happiness” is xxxxxxxxxxxxx</p>
                         <p>That is because people actually link “happiness” with “xxx” the most</p>
                     </div>
                     <div class="conclusion-placeholder">Conclusion Placeholder</div>
                 </div>
-            </div>
+            </div>-->
             <div class="conclusion">
                 <a name="conclusion"></a>
                 <h2>Conclusion</h2>
                 <div>
-                    <tableau-viz id="tableauYeungYuet"       
-                        src='https://public.tableau.com/views/Task1_17319395106370/Dashboard2?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task6 Conclusion-->
-                      </tableau-viz>
+                    <style>
+                        iframe {
+                            width: 100%;
+                            height: 280px;
+                            border: none; /* Remove border for a cleaner look */
+                        }
+                    </style>
+                    <iframe src="d3_visualization.html"></iframe>
                 </div>
                 <p>The above Link-Node Graph reflects, xxxxxxxxxxxxxxxxxxxxxx.</p>
                 <p>So, energy consumption and happiness are correlated, true happiness depends on a complex interplay of factors beyond mere energy availability.</p>
