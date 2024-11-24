@@ -102,6 +102,10 @@
         .card p {
             margin-bottom: 10px;
         }
+        .node-link {
+            display: flex;
+            margin-top: 20px;
+        }
         .conclusion {
             padding: 20px;
             border-top: 1px solid #ccc;
@@ -242,22 +246,26 @@
     <div class="conclusion">
         <a name="conclusion"></a>
         <h2>Conclusion</h2>
-        <div>
-            <style>
-                iframe {
-                    width: 100%;
-                    height: 280px;
-                    border: none; /* Remove border for a cleaner look */
-                }
-            </style>
-            <iframe src="d3_visualization.html"></iframe>
+        <div class = "node-link graph">
+            <div class = "visualization">
+                <style>
+                    iframe {
+                        width: 380px;
+                        height: 350px;
+                        border: none; /* Remove border for a cleaner look */
+                    }
+                </style>
+                <iframe src="d3_visualization.html"></iframe>
+            </div>
+            <div class = "insight">
+                <p>The above Link-Node Graph shows that:<br>
+                    1. Increased energy consumption can drive economic growth, which may enhance overall happiness.<br>
+                    2. Higher levels of energy consumption are associated with improved human development, leading to greater happiness among citizens.<br>
+                    3. The Consumer Price Index (CPI) reflects inflation; rising prices of goods can negatively impact happiness.<br>
+                    4. Air pollution significantly affects individual well-being and happiness.
+                </p>
+            </div>
         </div>
-        <p>The above Link-Node Graph shows that:<br>
-            1. Increased energy consumption can drive economic growth, which may enhance overall happiness.<br>
-            2. Higher levels of energy consumption are associated with improved human development, leading to greater happiness among citizens.<br>
-            3. The Consumer Price Index (CPI) reflects inflation; rising prices of goods can negatively impact happiness.<br>
-            4. Air pollution significantly affects individual well-being and happiness.
-        </p>
         <p>
             <span class="highlight">Overall Insight:</span><br>
             In summary, greater energy consumption contributes to economic growth and improved living standards, thereby increasing individual happiness. However, it is essential to manage air pollutants generated during energy production to minimize their adverse effects on overall well-being.
