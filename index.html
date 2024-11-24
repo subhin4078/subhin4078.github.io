@@ -117,6 +117,9 @@
         .image-container div {
             text-align: center;
         }
+        .grey-text {
+            color: grey;
+        }
     </style>
     <script type="module" src="https://embedding.tableauusercontent.com/tableau.embedding.3.1.0.min.js"></script>
 </head>
@@ -183,6 +186,9 @@
     <div class="card">
         <h3>Total Energy Consumption & Happiness Score versus Air Quality</h3>
         <p>
+            We evaluate the Air Quality Level using Air Quality Index. Our analysis reveals the following insights:
+        </p>
+        <p>
             From the graph, we found that the correlation between Energy Consumption and Air Quality Level is weak​. One of the reasons is the air quality level is not directly related to energy consumption. However, the air quality level is more related to the environment and the government's policy.
         </p>
         <p>
@@ -200,6 +206,9 @@
     <div class="card">
         <h3>Total Energy Consumption & Happiness Score versus Finance & Living Quality </h3>
         <p>
+            We analyze finance using three key factors: GDP*, the unemployment rate, and the CPI*. Additionally, we assess Living Quality using the HDI*. Our findings are as follows:
+        </p>
+        <p>
             We found the following positive correlations:<br>
             1. GDP with Total Energy Consumption<br>
             2. GDP per Capita / HDI with Total Energy Consumption per Capita<br>
@@ -212,12 +221,12 @@
         <p>
             To conclude, it shows that the higher energy consumption may lead to a higher GDP and HDI, which may lead to a higher happiness score.
         </p>
-        <p><small><small>
+        <p class="grey-text"><small><small>
             * GDP (Gross Domestic Product): The total monetary value of all final goods and services produced in a country within a specific time period, usually measured annually. It indicates the economic performance of a country.<br>
+            
+            * CPI (Consumer Price Index): A measure that examines the weighted average of prices of a basket of consumer goods and services, such as food, transportation, and medical care. It is used to estimate inflation and the cost of living over time.<br>
 
             * HDI (Human Development Index): A composite index that measures a country's average achievements in three basic aspects of human development: health (life expectancy), education (years of schooling), and standard of living (GNI per capita). It aims to assess overall human well-being rather than purely economic factors.<br>
-
-            * CPI (Consumer Price Index): A measure that examines the weighted average of prices of a basket of consumer goods and services, such as food, transportation, and medical care. It is used to estimate inflation and the cost of living over time.<br>
         </small></small></p>
         <div>
             <tableau-viz id="tableau"       
