@@ -117,15 +117,15 @@
     <script type="module" src="https://embedding.tableauusercontent.com/tableau.embedding.3.1.0.min.js"></script>
 </head>
 <body>
-    <h1>If a country has higher <span class="highlight">Energy Consumption</span>, will people there <span class="highlight">Happier</span>?</h1>
+    <h1>If a country has higher <span class="highlight">Energy Consumption</span>, Do people there become <span class="highlight">Happier</span>?</h1>
     <div class="container">
         <div class="sidebar">
             <ul>
                 <li>Our Questions + Insight from the graph</li>
                 <li>More Prove
                     <ul>
-                        <li><a href="#EnergyCon">Energy Consumption &amp; its related Terms</a></li>
-                        <li><a href="#Happy">Same terms &amp; Happiness</a></li>
+                        <li><a href="#Task3">Happiness and Environment</a></li>
+                        <li><a href="#Task4,5">Happiness, Finance and Living Quality</a></li>
                     </ul>
                 </li>
                 <li><a href="#conclusion">Conclusion</a></li>
@@ -134,10 +134,10 @@
         <div class="content">
             <h2>Our Question + Insight from the graph</h2>
             <p>
-                Imagine a country with abundant energy resources. Does this mean its people are happier? Let’s explore this intriguing question through different data visualizations.
+                Imagine a country with significant total energy consumption and high per capita energy use. Does this correlate with the happiness of its citizens? Let’s explore this intriguing question by analyzing various data visualizations from environment, finance, and living quality.
             </p>
             <p>
-                This map highlights the relationship between <span class="highlight">energy consumption</span> and <span class="highlight">happiness</span> across regions. Preliminary findings suggest a <span class="highlight">positive correlation</span>.
+                This map highlights the relationship between <span class="highlight">energy consumption</span> and <span class="highlight">happiness</span> across regions. Preliminary findings suggest a <span class="highlight">positive correlation</span>. Therefore, we can further study that there are several factors linking the relationship between happiness and energy consumption.
             </p>
 
             <div>
@@ -149,7 +149,10 @@
             <div class="more-info">
     <h3>More Prove</h3>
     <p>
-        Why Might More Energy Consumption (Not) Make People Happy? To dive deeper, let’s look into the key-words of it. The word cluster reveals that "<span class="keywords">Energy Consumption</span>" frequently connects with terms like "<span class="keywords">Environment</span>," "<span class="keywords">Finance</span>," and "<span class="keywords">Living Quality</span>."
+        Why could higher energy consumption contribute to happiness, or not? To delve into this, we can look at relevant keywords. The cluster of terms related to "energy consumption" often includes "environment", "finances", and "quality of life." On the other hand, "happiness" is commonly linked with ideas such as "well-being," "life", and "health."
+    </p>
+    <p>
+        Consequently, we can primarily identify three key factors: <span class="highlight">Environment, Finance, and Living Quality.</span>
     </p>
     <div class="image-container">
         <div>
@@ -161,36 +164,44 @@
             <p><small>Text about Happiness</small></p>
         </div>
     </div>
-    <p><span class="keywords">Environment</span>: High energy use often impacts air quality and climate change.</p>
-    <p><span class="keywords">Finance</span>: Energy costs influence economic stability and household budgets.</p>
-    <p><span class="keywords">Living Quality</span>: Access to energy affects comfort and convenience.</p>
+    <p><span class="keywords">Environment</span>: High energy consumption often negatively affect air quality and contribute to climate change.</p>
+    <p><span class="keywords">Finance</span>: The cost of energy affects economic stability and the financial management of households.</p>
+    <p><span class="keywords">Living Quality</span>: Availability of energy plays a crucial role in providing comfort and convenience.</p>
+    <!-- <p>Insight: The focused wordings on different topics, revealing the energy consumption is more related to physical environment while happiness is more focused on personal mentality </p> -->
 </div>
-            <div class="related-terms">
-                <a name="EnergyCon"></a>
-                <h2>Energy Consumption &amp; its related Terms</h2>
-            </div>
-            <div class="same-terms">
-                <a name="Happy"></a>
-                <h2>Same terms &amp; Happiness</h2>
-                <p>How Do "<span class="keywords">Environment</span>," "<span class="keywords">Finance</span>," and "<span class="keywords">Living Quality</span>" Relate to <span class="highlight">Happiness</span>?</p>
-                <div class="card">
-                    <h3>Happiness and Environment</h3>
-                    <p>?????</p>
-                    <div>
-                        <tableau-viz id="tableau"       
-                            src='https://public.tableau.com/views/Task3_17323403212080/3-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task3 Happiness vs air quality-->
-                          </tableau-viz>
-                    </div>
-                </div>
-                <div class="card">
-                    <h3>Happiness, Finance and Living Quality </h3>
-                    <p>?????</p>
-                    <div>
-                        <tableau-viz id="tableau"       
-                            src='https://public.tableau.com/views/Task45_17323402993720/45-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task4 Happiness vs finance--> <!--Task5 Happiness vs living quality-->
-                          </tableau-viz>
-                    </div>
-                </div>
+
+<div class="task3,4,5">
+    <!--Task3 Happiness vs air quality-->
+    <a name="Task3"></a>
+    <h2>Energy Consumption &amp; Happiness versus different aspects</h2>
+    <p>How are "<span class="keywords">Environment</span>," "<span class="keywords">Finance</span>," and "<span class="keywords">Living Quality</span>" connected to <span class="highlight">Energy Consumption & Happiness</span>?</p>
+    <div class="card">
+        <h3>Total Energy Consumption & Happiness Score versus Air Quality</h3>
+        <p>
+            From the graph, we found that the correlation between Energy Consumption and Air Quality Level is weak​. One of the reasons is the air quality level is not directly related to energy consumption. However, the air quality level is more related to the environment and the government's policy.
+        </p>
+        <p>
+            There is a clear layer indicating that a higher happiness score tends to have a better air quality level. It shows that people are more likely to be happy when they live in a clean environment.
+        </p>
+        <div>
+            <tableau-viz id="tableau"       
+                src='https://public.tableau.com/views/Task3_17323403212080/3-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task3 Happiness vs air quality-->
+                </tableau-viz>
+        </div>
+    </div>
+
+    <!--Task4 Happiness vs finance--> <!--Task5 Happiness vs living quality-->
+    <a name="Task4,5"></a>
+    <div class="card">
+        <h3>Happiness, Finance and Living Quality </h3>
+        <p>?????</p>
+        <div>
+            <tableau-viz id="tableau"       
+                src='https://public.tableau.com/views/Task45_17323402993720/45-final?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link'> <!--Task4 Happiness vs finance--> <!--Task5 Happiness vs living quality-->
+                </tableau-viz>
+        </div>
+    </div>
+
                 <!--<div class="card">
                     <h3>Happiness and Living Quality</h3>
                     <p>?????</p>
@@ -206,24 +217,24 @@
                     <div class="conclusion-placeholder">Conclusion Placeholder</div>
                 </div>
             </div>-->
-            <div class="conclusion">
-                <a name="conclusion"></a>
-                <h2>Conclusion</h2>
-                <div>
-                    <style>
-                        iframe {
-                            width: 100%;
-                            height: 280px;
-                            border: none; /* Remove border for a cleaner look */
-                        }
-                    </style>
-                    <iframe src="d3_visualization.html"></iframe>
-                </div>
-                <p>The above Link-Node Graph reflects, xxxxxxxxxxxxxxxxxxxxxx.</p>
-                <p>So, energy consumption and happiness are correlated, true happiness depends on a complex interplay of factors beyond mere energy availability.</p>
-            </div>
-        </div>
-    </div>
 
+    <!-- Task6 -->
+    <div class="conclusion">
+        <a name="conclusion"></a>
+        <h2>Conclusion</h2>
+        <div>
+            <style>
+                iframe {
+                    width: 100%;
+                    height: 280px;
+                    border: none; /* Remove border for a cleaner look */
+                }
+            </style>
+            <iframe src="d3_visualization.html"></iframe>
+        </div>
+        <p>The above Link-Node Graph reflects, xxxxxxxxxxxxxxxxxxxxxx.</p>
+        <p>So, energy consumption and happiness are correlated, true happiness depends on a complex interplay of factors beyond mere energy availability.</p>
+    </div>
+</div>
 
 </body></html>
